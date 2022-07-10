@@ -9,6 +9,16 @@ Actualmente cuenta con tres funcionalidades:
 
 * Reemplazar una Tabla de Decisión (decisionTable) por el contenido de un archivo XLSX (Excel), el cual debe contar con un formato standard para que el reemplazo funcione correctamente.
 
+Cuenta con una interfaz de usuario simple creada en PyQt5, y controles de formato simples para asegurarse que el archivo DMN y/o XLSX elegido por el usuario reuna los requisitos mínimos para ser procesados.
+
+Requiere para su funcionamiento de las siguientes librerías de Python:
+
+- lxml.etree
+- openpyxl
+- PyQt5
+- uuid
+- docx
+
 
 Gervasio Frugoni
 
