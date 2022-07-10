@@ -1,0 +1,39 @@
+Prestador.convenioPrestador, Prestador de Convenio 
+Prestacion.excluidaDeCobertura, Exclusion de cobertura de la prestacion 
+Prestacion.tipoExclusion, tipo de Exclusion de la prestacion 
+Prestacion.resolucionAdministrativa, Exclusion administrativa de la prestacion 
+Prestacion.excluidaResolucionMedica, Exclusion medica de la prestacion 
+TransaccionAutorizar.tipoSolicitante, tipo de solicitante de la autorizacion 
+CalculosIndividuales.exceptuadoControlCobertura, caso exceptuado de controles de cobertura 
+Prestacion.cubierta, cobertura de la prestacion 
+Prestacion.cantidadDiariaPermitida, cantidad diaria permitida para la prestacion 
+Prestacion.consumoDiarioAsociado, consumo diario de la prestacion por parte del Asociado 
+Prestacion.cantidadAutorizar, cantidad a autorizar de la prestacion 
+Prestacion.prestacionContratadaPrestador, prestacion contratada por el Prestador de Convenio 
+Prestacion.prestacion, codigo de la prestacion 
+Prestacion.nomenclador, nomenclador de la prestacion 
+Prestacion.sexoPrestacion, sexo permitido para la prestacion 
+Asociado.sexo, sexo del Asociado 
+CalculosIndividuales.excluidoRangoEdad, Exclusion de acceso a la prestacion por edad del Asociado 
+Prestacion.diagnosticoPrincipal, diagnostico principal de la prestacion 
+Asociado.antiguedadSancorMeses, antiguedad en meses del Asociado en la empresa 
+Prestacion.mesesCobertura, meses de permanencia del Asociado en el plan 
+Asociado.pmi, Asociada esta en PMI (Programa Materno Infantil) 
+Prestacion.exclusivaPMI, prestacion es exclusiva de PMI
+Prestacion.permanenciaPlanRequerida, antiguedad (en meses) requerida del Asociado en el plan 
+Prestacion.permanenciaSancorRequerida, antiguedad (en meses) requerida del Asociado en la empresa 
+CalculosIndividuales.excluidoPermanencia.nomencladorExcluido, caso excluido del control de permanencia 
+Asociado.convenioEmpresa, convenio empresa de la afiliacion 
+Prestacion.requiereAutorizacionPrevia, prestacion debe derivar a Auditoria (referencia 14) 
+Prestacion.autorizaPorReintegro, prestacion exclusiva por via de Reintegro (referencia 1) 
+CalculosIndividuales.isCapitadaPsique, servicio capitado en Psique 
+Prestacion.controlaGrupoFamiliar, prestacion que solo aplica a un Grupo Familiar 
+Asociado.cantidadIntegrantesGrupoFamiliar, cantidad de integrantes del Grupo Familiar 
+Prestacion.marcaRecuperoSur, prestacion con Recupero Sur 
+Prestacion.internacionBreve, prestacion con marca de Internacion Breve (IB) 
+Prestacion.presupuestoPrestacion, valor presupuestado y aprobado para la prestacion 
+Asociado.elegibilidadOk, controles de Elegibilidad aprobados 
+CalculosIndividuales.permitidoZonaGeografica, prestacion permitida en zona geografica del Asociado 
+CalculosIndividuales.esCabaOBsas, Asociado reside en CABA o Provincia de Buenos Aires 
+CalculosIndividuales.superaFechaIngreso, Asociado ingreso despues del 01/03/2022 
+Asociado.excluidoAcceso, Asociado esta excluido del acceso al servicio 
