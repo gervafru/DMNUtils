@@ -1,5 +1,7 @@
 DMNUtils:
 
+![alt text](https://github.com/gervafru/DMNUtils/blob/main/Images/MainMenu.png)
+
 DMNUtils es un conjunto de herramientas para interactuar con archivos DMN (Decision Model and Notation), y poder realizar acciones con los mismos que habitualmente no se pueden llevar a cabo.
 Actualmente cuenta con tres funcionalidades:
 
