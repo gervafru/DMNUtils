@@ -8,3 +8,8 @@ Actualmente cuenta con tres funcionalidades:
 * Generar explicación en lenguaje natural de las Tablas de Decisión (decisionTable) que conforman el DMN.
 
 * Reemplazar una Tabla de Decisión (decisionTable) por el contenido de un archivo XLSX (Excel), el cual debe contar con un formato standard para que el reemplazo funcione correctamente.
+
+
+Gervasio Frugoni
+
+10/07/2022
