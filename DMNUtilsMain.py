@@ -1,11 +1,10 @@
-from operator import truediv
 import uuid
 import xml.etree.ElementTree as ET
 import lxml.etree as ETL
 import openpyxl
 from openpyxl.styles import Border, Side, Alignment, Font, PatternFill
 from PyQt5 import QtWidgets, uic, QtGui
-from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog, QMessageBox
+from PyQt5.QtWidgets import QFileDialog, QMessageBox
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 import sys
@@ -15,6 +14,9 @@ from docx.enum.style import WD_STYLE_TYPE
 from docx.shared import Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 import os
+
+localdir = os.getcwd()
+os.chdir(localdir)
 
 class Ui(QtWidgets.QDialog):
 
@@ -540,7 +542,7 @@ class Ui(QtWidgets.QDialog):
         paragraph = header.paragraphs[0]
 
         paragraph.style.font.name = 'Calibri'
-        paragraph.text = 'SanCor Salud - DMN\t\t'
+        paragraph.text = 'DMN\t\t'
 
         logo_run = paragraph.add_run()
         logo_run.add_picture('logo.png', width=Inches(1))
