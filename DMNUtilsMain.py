@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 import uuid
 import xml.etree.ElementTree as ET
 import lxml.etree as ETL
@@ -56,6 +57,7 @@ class Ui(QtWidgets.QDialog):
             myroot = mytree.getroot()
             TagGenerico = '{http://www.omg.org/spec/DMN/20180521/MODEL/}'
 
+            
             global ListaTablasDecision
 
             ListaTablasDecision = []
@@ -516,6 +518,8 @@ class Ui(QtWidgets.QDialog):
 
         global ListaTablasDecision
 
+        global IndiceDocRegla
+
         if ListaTablasDecision == []:
             print("DMN incorrecto o sin tabla de decisión.")
 
@@ -645,6 +649,17 @@ class Ui(QtWidgets.QDialog):
                     ListaAgre.append(list(parte.split(',')))
 
 
+            # Leer columna personalizada indice
+
+            
+
+            with open('listas/INDICE_DOC.txt','r', encoding='ISO-8859-1') as indice:
+                try:
+                    IndiceDocRegla = int(indice.read())
+                except:
+                    IndiceDocRegla = NULL
+
+
 
             ExplicacionGeneral = ''
 
@@ -703,13 +718,21 @@ class Ui(QtWidgets.QDialog):
 
             mydoc.add_heading(nombreTabla, 0) # Agregar docx nombre tabla de decision
 
-
             for Indice, LineaRegla in enumerate(ListaRules): # nivel de cada linea de regla
+                print(LineaRegla)
                 ExplicacionLinea = ''
                 TituloExplicativo = str(LineaRegla[-1]) # Tomar annotation como titulo explicativo
                 if TituloExplicativo in ('-', '', ' ', 'None'):
                     TituloExplicativo = ''
-                TituloLinea = '\n' + 'Regla n° ' + str(Indice) + ': ' + TituloExplicativo + '\n'
+                
+                NuevoIndice = ''
+
+                if (IndiceDocRegla == NULL) or (IndiceDocRegla not in range(len(LineaRegla))) :
+                    NuevoIndice = str(Indice)
+                else:
+                    NuevoIndice = LineaRegla[IndiceDocRegla]
+
+                TituloLinea = '\n' + 'Regla n° ' + NuevoIndice + ': ' + TituloExplicativo + '\n'
                 mydoc.add_heading(TituloLinea, 2)
                 PrimeraCondicionEncontrada = False
                 PrimerResultadoEncontrado = False
