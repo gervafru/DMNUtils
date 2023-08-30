@@ -19,7 +19,7 @@ Requiere para su funcionamiento de las siguientes librerías de Python:
 - openpyxl
 - PyQt5
 - uuid
-- docx
+- python-docx
 
 
 Gervasio Frugoni
